@@ -1,13 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  template: `
+    <nav>
+      <a routerLink="/">Home</a>
+      |
+      <a routerLink="/user">User</a>
+      |
+      <a routerLink="/template-form">Template-form</a>
+      |
+      <a routerLink="/reactive-form">Reactive-form</a>
+      |
+      <a routerLink="/injection">injection</a>
+      |
+      <a routerLink="/pipes">pipes</a>
+    </nav>
+    <router-outlet />
+  `,
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, RouterLink],
 })
-export class AppComponent {
-  title = 'my-app';
-}
+export class AppComponent {}
