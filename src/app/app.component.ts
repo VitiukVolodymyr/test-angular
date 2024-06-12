@@ -16,6 +16,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <a routerLink="/injection">injection</a>
       |
       <a routerLink="/pipes">pipes</a>
+      |
+      <a routerLink="/essence">essence</a>
     </nav>
     <router-outlet />
   `,

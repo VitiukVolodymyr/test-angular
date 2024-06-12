@@ -1,0 +1,27 @@
+:host {
+  display: block;
+} 
+
+.section:not(:last-child) {
+  margin-bottom: 15px;
+}
+.section {
+  width: 200px;
+  height: 50px;  
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
